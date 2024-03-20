@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Teleport Mee</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="css/index.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+		<script src="https://www.youtube.com/iframe_api"></script>
+		<script src="js/locations.js"></script>
+		<script src="js/player.js"></script>
+		<script src="js/state.js"></script>
+	</head>
+	<body>
+		<div class="app">
+			
+			<div class="loading">
+				<h1>Loading...</h1>
+			</div>
+
+			<div class="player" id="player"></div>
+
+			<div class="show-hide" onclick="toggleMenu()"><i class="fas fa-eye-slash"></i></div>
+
+			<div class="menu">
+				<div class="places">
+					<div class="places-header">
+						<p>Where do you want to go?</p>
+					</div>
+					<div class="places-list">
+						<ul></ul>
+					</div>
+				</div>
+
+				<div class="configuration">
+					<div class="configuration-group">
+						<p>Noise</p>
+						<button onclick="toggleNoise(this)">OFF</button>
+					</div>
+
+				</div>
+
+				<div class="information">
+					<p class="white-text">Made by Arsalan Uddin</p>
+					<div class="video-source">
+						<a target="blank">Video Source</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/index.js"></script>
+	</body>
+</html>
